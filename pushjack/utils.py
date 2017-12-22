@@ -22,7 +22,7 @@ def compact_dict(dct):
 
 def json_dumps(data):
     """Standardized json.dumps function with separators and sorted keys set."""
-    return (json.dumps(data, separators=(',', ':'), sort_keys=True)
+    return (json.dumps(data, separators=(',', ':'), sort_keys=True, ensure_ascii=False)
             .encode('utf8'))
 
 
